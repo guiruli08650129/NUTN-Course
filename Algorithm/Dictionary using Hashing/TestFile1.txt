@@ -1,0 +1,31 @@
+What are your apps hiding.
+MIT researchers have found that much of the data transferred to and 
+from the 500 most popular free applications for Google Android cellphones make little or no difference to the user¡¦s experience.
+
+Of those ¡§covert¡¨ communications, roughly half appear to be initiated by standard Android analytics packages, 
+which report statistics on usage patterns and program performance and are intended to help developers improve applications.
+
+¡§The interesting part is that the other 50 percent cannot be attributed to analytics,¡¨ 
+says Julia Rubin, a postdoc in MIT¡¦s Computer Science and Artificial Intelligence Laboratory (CSAIL), who led the new study. 
+¡§There might be a very good reason for this covert communication. 
+We are not trying to say that it has to be eliminated. 
+We¡¦re just saying the user needs to be informed.¡¨
+
+The researchers reported their findings last week at the IEEE/ACM International Conference on Automated Software Engineering.
+ Joining Rubin on the paper are Martin Rinard, a professor of computer science and engineering at MIT; 
+ Michael Gordon, 
+ who received his PhD in electrical engineering and computer science in 2010 and remained at CSAIL as a researcher until last July; 
+ and Nguyen Nguyen of the engineering firm UWin Software.
+
+Different operations performed by the same mobile app may require outside communication, 
+and rather than try to coordinate shared access to a single communication channel, 
+the app will typically open a separate communication channel for each operation.
+
+The researchers analyzed the number of communication channels opened by the 500 most popular mobile apps and 
+found that roughly 50 percent of them appear to have no bearing on the user experience. 
+That doesn¡¦t necessarily translate directly to the quantity of data exchanged over those channels, but for short sessions of application use, 
+the portion of transmitted data irrelevant to user experience is also as much as 50 percent.
+
+Across longer sessions, in which large files are transferred to the phone ¡X by, say, 
+music- or video-streaming services ¡X the percentage of data transmitted covertly steadily diminishes. 
+But covert communication channels remain open.

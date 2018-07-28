@@ -1,0 +1,4 @@
+The researchers analyzed the number of communication channels opened by the 500 most popular mobile apps and found that roughly 50 percent of them appear to have no bearing on the user experience. 
+That doesn¡¦t necessarily translate directly to the quantity of data exchanged over those channels, 
+but for short sessions of application use, 
+the portion of transmitted data irrelevant to user experience is also as much as 50 percent.

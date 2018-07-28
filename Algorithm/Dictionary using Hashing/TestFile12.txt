@@ -1,0 +1,7 @@
+As such, the researchers argue, 
+their system captures something of the elasticity of human concepts, 
+which often have fuzzy boundaries but still seem to delimit coherent categories. 
+It also mimics the human ability to learn new concepts from few examples. 
+It thus offers hope, they say, that the type of computational structure it¡¦s built on, 
+called a probabilistic program, 
+could help model human acquisition of more sophisticated concepts as well.

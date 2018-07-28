@@ -1,0 +1,3 @@
+Different operations performed by the same mobile app may require outside communication, 
+and rather than try to coordinate shared access to a single communication channel, 
+the app will typically open a separate communication channel for each operation.
