@@ -1,0 +1,10 @@
+data <- read.table("F:\\workspace\\BigData\\output.txt", header = FALSE, sep = " ", col.names = c("i", "j", "value"))
+myMatrix <- Matrix::sparseMatrix(i = data$i, j = data$j, x = data$value)
+beta=0.75
+m <- array((1/916428), dim=c(916428,1))
+ini <- array(1/916428, dim=c(916428,1)) 
+r <- crossprod(myMatrix,ini)*beta+(1-beta)*m
+for (x in c(1:14)) {r <- crossprod(myMatrix,r)*beta+(1-beta)*m}
+head(r[order(-r[,1])], 20)
+r2 <- cbind(c(1:916428), r[,1])
+head(r2[order(-r2[,2], r2[,1])], 20)
