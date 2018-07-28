@@ -21,7 +21,9 @@ Description
 Result
 ---
 ![result1](https://github.com/guiruli08650129/NUTN-Course/blob/master/BigData/PageRank/pictures/result1.PNG)
-<br>
+
+
+
 ![result2](https://github.com/guiruli08650129/NUTN-Course/blob/master/BigData/PageRank/pictures/result2.PNG)
 
 Analysis
