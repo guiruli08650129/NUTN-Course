@@ -24,8 +24,10 @@ Description
 
 Result
 ---
-- TestFile1: ![testFile1](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Plagiarism%20Detection%20based%20on%20Edit%20Distance/picture/testFile1.png)
-- TestFIle2: ![testFile2](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Plagiarism%20Detection%20based%20on%20Edit%20Distance/picture/testFile2.png)
+- TestFile1: 
+ ![testFile1](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Plagiarism%20Detection%20based%20on%20Edit%20Distance/picture/testFile1.png)
+- TestFIle2: 
+ ![testFile2](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Plagiarism%20Detection%20based%20on%20Edit%20Distance/picture/testFile2.png)
 
 
 
