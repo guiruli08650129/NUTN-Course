@@ -36,8 +36,8 @@ Result
 ---
 - Space Complexity: algorithm 1 and algorithm 2 are both O(n).
 - Time Complexity:
-    * Algorithm 1: ![algo1](https://i.imgur.com/8hSSyOz.png =300x40)
-    * Algorithm 2: ![algo2](https://i.imgur.com/TY3XquQ.png =250x25)
+    * Algorithm 1: ![algo1](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Minimum%20Distance/picture/algo1.png)
+    * Algorithm 2: ![algo2](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Minimum%20Distance/picture/algo2.png)
 
 - Algorithm 1 is slower than algorithm 2.
-![](https://i.imgur.com/dG2ZJW8.png =500x300)
+![result](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Minimum%20Distance/picture/result.png)
