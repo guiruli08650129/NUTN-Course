@@ -15,7 +15,7 @@ public class matrixClass {
 		}
 	}
 	
-	public void ascAdd1(String s)
+	public void setm(String s)
 	{
 		char[] arr = s.toCharArray();
 		
@@ -28,37 +28,24 @@ public class matrixClass {
 		}
 	}
 	
-	public void set(String s)
-	{
-		char[] arr = s.toCharArray();
-		
-		for(int i = 0 ; i < 5 ; i++)
-		{
-			for(int j = 0 ; j < 5 ; j++)
-			{
-				this.m[i][j] = ((arr[i*5+j])+253)%95+32;
-			}
-		}
-	}
-	
 	public int[][] getm()
 	{
 		return this.m;
 	}
 	
-	public void trans()
+	public void trans(int[][] matrix)
 	{
 		for(int i = 0; i < 5; i++) 
 		{
 			  for(int j = i+1; j < 5; j++) 
 			  {
-			    int temp = this.m[i][j];
-			    this.m[i][j] = this.m[j][i];
-			    this.m[j][i] = temp;
+			    int temp = matrix[i][j];
+			    matrix[i][j] = matrix[j][i];
+			    matrix[j][i] = temp;
 			  }
 		}
 	}
-
+	
 	public void print()
 	{
 		for(int i = 0 ; i < 5 ; i++)
