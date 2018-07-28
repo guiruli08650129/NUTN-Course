@@ -20,8 +20,8 @@ Description
 
 Result
 ---
-![result1](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Plagiarism%20Detection%20based%20on%20Edit%20Distance/picture/testFile1.png)
-![result2](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Plagiarism%20Detection%20based%20on%20Edit%20Distance/picture/testFile2.png)
+![result1](https://github.com/guiruli08650129/NUTN-Course/blob/master/BigData/PageRank/pictures/result1.PNG)
+![result2](https://github.com/guiruli08650129/NUTN-Course/blob/master/BigData/PageRank/pictures/result2.PNG)
 
 Analysis
 ---
