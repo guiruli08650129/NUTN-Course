@@ -23,13 +23,13 @@ Description
 Result
 ---
 1. 功能討論:比較不同p和q發生Collision的次數
-![p=7](https://i.imgur.com/q5L8r33.png =400x250)
-![p=11](https://i.imgur.com/7AUW4wE.png =400x250)
-![p=13](https://i.imgur.com/SKxWydJ.png =400x250)
+![p=7](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Dictionary%20using%20Hashing/CollisionPic/p7.png)
+![p=11](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Dictionary%20using%20Hashing/CollisionPic/p11.png)
+![p=13](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Dictionary%20using%20Hashing/CollisionPic/p13.png)
 
 2. 執行效率:不同Hash function執行時間比較
-![p=7](https://i.imgur.com/a1KIwKv.png =400x250)
-![p=11](https://i.imgur.com/MmE6ChV.png =400x250)
-![p=13](https://i.imgur.com/j4wUgmm.png =400x250)
+![p=7](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Dictionary%20using%20Hashing/TimePic/p7.png)
+![p=11](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Dictionary%20using%20Hashing/TimePic/p11.png)
+![p=13](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Dictionary%20using%20Hashing/TimePic/p13.png)
 
 
