@@ -24,8 +24,8 @@ Description
 
 Result
 ---
-- TestFile1: ![](https://i.imgur.com/kk8IFlZ.png =500x300)
-- TestFIle2: ![](https://i.imgur.com/Qj6Zh2l.png =500x300)
+- TestFile1: ![testFile1](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Plagiarism%20Detection%20based%20on%20Edit%20Distance/picture/testFile1.png)
+- TestFIle2: ![testFile2](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Plagiarism%20Detection%20based%20on%20Edit%20Distance/picture/testFile2.png)
 
 
 
