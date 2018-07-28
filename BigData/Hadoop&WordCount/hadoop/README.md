@@ -12,4 +12,4 @@ Description
 - Others:
     * Yarn: source management & job assignment
     * JobHistoryServer: manage records of past work
-![](https://i.imgur.com/Vf2XhC2.png =500x200)
+![](https://github.com/kay08650129/NUTN-Course/raw/master/BigData/Hadoop&WordCount/hadoop/hadoop.png =500x200)
