@@ -6,9 +6,9 @@ Description
 1. Build Hashing with a Text File Input test.txt
     + 定義Token & Words in Dictionary
     + Hashing (K=s0s1s2…sn)
-        * Hash function 1: ![h1](https://i.imgur.com/OmCf8Hw.png =200x30) , ord(_c_) means ASCII code of character c
+        * Hash function 1: ![h1](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Dictionary%20using%20Hashing/h1.png =200x30) , ord(_c_) means ASCII code of character c
 
-        * Hash function 2: ![h2](https://i.imgur.com/aBwrQ9B.png =500x30) , where 257≤p<q, p and q (hash table sizes) are prime numbers, ![](https://i.imgur.com/UeDGLsA.png =300x30)
+        * Hash function 2: ![h2](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Dictionary%20using%20Hashing/h2.pngg =500x30) , where 257≤p<q, p and q (hash table sizes) are prime numbers, ![](https://github.com/guiruli08650129/NUTN-Course/blob/master/Algorithm/Dictionary%20using%20Hashing/ie.png =300x30)
 
 
     + 實作 b 兩個Hashing， 討論不同的p(=11, 13, 97, 101, 149, 151, 199, 211, ...) and q(=211, 223, 227, 229, 233, ...)
