@@ -10,6 +10,6 @@ Description
 
 Result
 ---
-![result]()
+![result](https://github.com/guiruli08650129/NUTN-Course/blob/master/NetworkProgramming/MultiThread/result.PNG)
 
 
