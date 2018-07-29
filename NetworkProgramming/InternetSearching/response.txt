@@ -1,0 +1,1413 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="content-Type" content="text/html; charset=utf-8">
+		<title>博客來-目前您搜尋的關鍵字為: python</title>
+		<meta name="keywords" content='博客來,圖書,python'>
+		<meta name="description" content='博客來搜尋,關鍵字:python,分類:圖書'>
+		<meta content="no-cache" http-equiv="Pragma"/>
+		<meta content="no-cache" http-equiv="Cache-Control"/>
+		<meta http-equiv="expires" content="0">
+		<link rel="stylesheet" type="text/css" href="//search.books.com.tw/css/search_20100831/b960_24.css">
+		<link rel="stylesheet" type="text/css" href="//search.books.com.tw/css/search_20100831/min/reset_mod.css">
+		<link rel="stylesheet" type="text/css" href="//search.books.com.tw/css/search_20100831/mod/mod_skin.css">
+		<link rel="stylesheet" type="text/css" href="//search.books.com.tw/css/search_20100831/search.css?20171120001">
+		<link rel="canonical" href="//search.books.com.tw/search/query/cat/all/key/python">
+		<script language="JavaScript" src="//jci.book.com.tw/jss/jquery/jquery-1.4.2.min.js"></script>
+		<script language="JavaScript" src="//jci.book.com.tw/jss/books/jqueryplugin/lazyload/1.9.3/jquery.lazyload.min.js"></script>
+		<script language="JavaScript" src="/exep/lib/js/jquery.placeholder.1.3.min.js"></script>
+		<script language="JavaScript" src="/exep/lib/js/jquery.json.min.js"></script>
+		<script type="text/javascript">
+        <!--
+            var act = '%2Fsearch%2Fquery%2Fcat%2FBKA%2Fpage%2F1%2Fkey%2Fpython';
+            $(document).ready(function(){
+                $.Placeholder.init();
+                $('a').bind('click', function(){ return true; });
+                $('#searchlist input:checkbox').click(function(){
+                    switch_li_bg(this);
+                });
+                $('input[name="C1"]').each(function(){
+                    switch_li_bg(this);
+                });
+                $("img:not(.scar)").not(".nolazyload_img img").lazyload({ 
+                    failurelimit: 10,
+                    placeholder : "/js/lib/white.png",
+                    effect : "fadeIn"
+                });
+                $.ajax({
+                    type: 'get',
+                    url: '//search.books.com.tw/search/weblog/',
+                    data: 'key=python&cat=1&total=2172&page=1&st=1532855786&reprodcnt=5&spell=-1',
+                    error: function(data) {},
+                    success: function(data) {}
+                });                
+            });
+            function switch_li_bg(elm){
+                var div = $(elm).parent().get(0);
+                var li = $(div).parent().get(0)
+                $(li).removeClass();
+                if(elm.checked){ $(li).addClass("item select");
+                }else{ $(li).addClass("item")}; 
+            }
+                        function item_putcart(){
+                var arr = new Array;
+                $('input[name="C1"]:checked').each(function(){
+                    arr.push(this.value);
+                });
+                if(arr.length > 0){ window.location = '//search.books.com.tw/redirect/move/key/python/area/mid_cart/page/1/cart/1/pdf/1/item/'+arr.join(':');
+                }else{ alert("尚未選擇購買商品！")};  
+            }
+            function item_select(flag){
+                $('input[name="C1"]').attr('checked',flag ? 'checked' : '');
+                $(flag ? 'input[name="C1"]:checked' : 'input[name="C1"]').each(function(){
+                    var div = $(this).parent().get(0);
+                    var li = $(div).parent().get(0)
+                    $(li).removeClass();
+                    $(li).addClass(flag ? "item select" : "item");  
+                });
+            }
+            function changePage(elm){
+                var index = $(elm).val();
+                window.location = "/search/query/cat/1/key/python/page/" + index + "/sort/1";
+            }
+            function changeView(elm){
+                window.location = "/search/query/cat/1/key/python/v/1";
+            }
+            function collapse(elm, type){
+                window.location = "/search/query/cat/all/key/python/c/" + type + "/sort/1";
+            }
+            function advancedSearch(elm) {
+                var advancedForm = $("#advancedsearch");
+                var rel = $(advancedForm).attr("rel");
+                var key = encodeURI($("input[id='key'][name='key']").val());
+                var catV = $("#query_type > option:selected").val();
+				if(trim(catV.toUpperCase()) == "OVS") {
+					catV = "1";
+				}
+                var redirUrl = "/search/query/cat/" + catV + "/key/python/sort/1";
+                var checked = $('#advancedsearch :checkbox').map(function() {
+					if($(this).attr('checked')) return $(this).attr('id')
+				}).get();
+				var ovs = 0;
+				var skey = encodeURI('');
+				var spell = -1;
+				var stem = 0;
+                                var adv_author = $('#adv_author').attr('checked');
+        		var adv_forsale = $('#adv_forsale').attr('checked');
+        		var adv_seven = $('#adv_seven').attr('checked');
+        		var adv_mnew = $('#adv_mnew').attr('checked');
+        		var adv_wnew = $('#adv_wnew').attr('checked');
+        		var adv_title = $('#adv_title').attr('checked');
+        		var adv_osstore = $('#adv_osstore').attr('checked');
+        		var adv_osstore_sg = $('#adv_osstore_sg').attr('checked');
+        		var adv_oshome = $('#adv_oshome').attr('checked');
+        		var adv_efree = $('#adv_efree').attr('checked');
+        		var adv_ereader1 = $('#adv_ereader1').attr('checked');
+        		var adv_ereader2 = $('#adv_ereader2').attr('checked');
+        		var adv_price_min=$('#adv_price_min').val();
+        		var adv_price_max=$('#adv_price_max').val();
+        		
+        		redirUrl+=segmentTrans('adv_author',adv_author)
+        		+segmentTrans('adv_forsale',adv_forsale)
+        		+segmentTrans('adv_seven',adv_seven)
+        		+segmentTrans('adv_mnew',adv_mnew)
+        		+segmentTrans('adv_wnew',adv_wnew)
+        		+segmentTrans('adv_title',adv_title)
+        		+segmentTrans('adv_osstore',adv_osstore)
+        		+segmentTrans('adv_osstore_sg',adv_osstore_sg)
+        		+segmentTrans('adv_oshome',adv_oshome)
+        		+segmentTrans('adv_efree',adv_efree)
+        		+segmentTrans('adv_ereader1',adv_ereader1)
+        		+segmentTrans('adv_ereader2',adv_ereader2)
+        		+segmentTrans('adv_price_min',adv_price_min)
+        		+segmentTrans('adv_price_max',adv_price_max)
+        		
+        		var price = [0, 0];
+                if($.trim(adv_price_min).length) price[0] = $.trim(adv_price_min);
+                if($.trim(adv_price_max).length) price[1] = $.trim(adv_price_max);
+				
+                var advancedList = {"checked": checked, "price": price, 
+                        "page": 1, 
+                        "cat": "1",
+                        "qsub": "",
+                        "sort": 1,
+                        "pcount": 109                }
+				$.ajax({
+					type: 'post',
+					url: '//search.books.com.tw/search/mining',
+					data: { area: rel, ref: act ,adlist: $.toJSON(advancedList), ovs: ovs, skey: skey, stem: stem},
+					error: function(data) {  window.location = redirUrl;},
+					success: function(data) { window.location = redirUrl;}
+				});
+				return false;
+            }
+            function segmentTrans(name , variable){
+				if (variable) {
+					if('adv_price_min' == name || 'adv_price_max' == name ) {
+						return "/"+name +"/"+variable;
+					} else {
+						return "/"+name +"/"+1;
+					}
+				} else {
+					return '';
+				}
+    		}
+            function reSearch(elm) {
+                var fm = 0, bfm = 1, val = [];
+                if($(elm).attr("id") == "fuzzySearch") fm = 1, bfm = 2;
+                $("input[name='userTerm[]']:checked").each(function(i){
+                    val[i] = $("label[for='" + $(this).attr('id') + "']").text();
+                });
+                if($.trim($("#customSearchText").val()) != '' && $.trim($("#customSearchText").val()) != "請輸入其他關鍵字") { val.push($.trim($("#customSearchText").val()))};
+                if(val.length > 0) {window.location = '/search/query/fm/' + fm + '/bfm/' + bfm + '/key/' + val.join(' ');
+                }else{ alert("請選擇關鍵字！") };
+            }
+            function redirect(url) {
+            	window.location.href = url;
+            }
+            function rewopen(url, target) {
+				window.open(url, target);
+            }
+            var isFreegetUnMultClick = false;
+			function freegetUnMultClick(item, device, idx, pdf, cat) {
+				if(isFreegetUnMultClick) {
+					return;
+				}
+				isFreegetUnMultClick = true;
+				var weblogICData = {};
+				weblogICData['key'] = 'python';
+				weblogICData['rel'] = 'freeget_' + device;
+				weblogICData['item'] = item;
+				weblogICData['page'] = 1;
+				weblogICData['idx'] = idx;
+				weblogICData['pdf'] = pdf;
+				weblogICData['cat'] = cat;
+				weblogICData['spell'] = '-1';                $.ajax({
+                    type: 'get',
+                    url: '//search.books.com.tw/search/weblogIC/',
+					data: $.param(weblogICData),
+                    error: function(data) {},
+                    success: function(data) {}
+                });
+				$.ajax({ url: "//www.books.com.tw/receive_ebooks/freeget_book",type:"get", dataType:"jsonp", jsonp: "item",jsonpCallback:item,
+					success: function(msg) {
+						if (msg.code === '102') { //未登入
+							var url = 'https://cart.books.com.tw/member/login?url=' + encodeURIComponent(location.href);
+							document.getElementById("div_freeget_msg").innerHTML = '<p>' + msg.message + '</p>';
+							if (device === 'M') {
+								document.getElementById("div_freeget_fbar").innerHTML = '<a href="'+url+'" class="button">登入</a><a href="javascript:hideFreegetWin()" class="button">稍後再領</a>';								
+							}
+							else {
+								document.getElementById("div_freeget_fbar").innerHTML = '<a href="'+url+'"><strong class="btn">登入</strong></a><a href="javascript:hideFreegetWin()"><strong class="btn">稍後再領</strong></a>';
+							}
+							$('#div_freeget_overlay').show();
+							$('#div_freeget_win').show();
+						} else if (msg.code === '000') {
+							var url = 'https://viewer-ebook.books.com.tw/viewer/index.html?readlist=all&MemberLogout=true';
+							document.getElementById("div_freeget_msg").innerHTML = '<p><i class="icon-ok-1"></i>免費商品<b>' + msg.message + '</b>已派送至您的電子書櫃。</p>';
+							if (device === 'M') {
+								document.getElementById("div_freeget_fbar").innerHTML = '<a href="'+url+'" class="button">前往電子書櫃</a><a href="javascript:hideFreegetWin()" class="button">繼續瀏覽網站</a>';
+							} else {
+								document.getElementById("div_freeget_fbar").innerHTML = '<a href="'+url+'"><strong class="btn">前往電子書櫃</strong></a><a href="javascript:hideFreegetWin()"><strong class="btn">繼續瀏覽網站</strong></a>';
+							}
+							$('#div_freeget_overlay').show();
+							$('#div_freeget_win').show();
+						} else {
+							document.getElementById("div_freeget_msg").innerHTML = '<p>'+msg.message+'</p>';
+							if (device === 'M') { 
+								document.getElementById("div_freeget_fbar").innerHTML = '<a href="javascript:hideFreegetWin()" class="button">關閉</a>';
+							} else {
+								document.getElementById("div_freeget_fbar").innerHTML = '<a href="javascript:hideFreegetWin()"><strong class="btn">關閉</strong></a>';
+							}
+							$('#div_freeget_overlay').show();
+							$('#div_freeget_win').show();
+						}
+						isFreegetUnMultClick = false;
+					},
+					error: function(data) {  
+						alert('fail');
+						isFreegetUnMultClick = false;
+					}
+				});
+			}
+			function hideFreegetWin(){
+				$('#div_freeget_overlay').hide();
+				$('#div_freeget_win').hide();
+			}
+        //-->
+        </script>
+</head>
+<body>
+    <script type="text/javascript" src="//www.books.com.tw/webs/header_js/p/basic/header_wel/zh_TW/header.js?1497514437"></script>
+    <!--main container-->
+	<div id="div_freeget_overlay" class="overlay" style="display:none"></div>
+	<div id="div_freeget_win" class="book-free-win" style="display:none">
+		<div class="wrap">
+			<div id="div_freeget_msg" class="winscroll"></div>
+			<div id="div_freeget_fbar" class="fbar"></div>
+        </div>
+    </div>
+	<!--導覽 始-->
+	<div class="bc">
+		您的位置在: <a href="//www.books.com.tw">首頁</a>			        	        	&gt;
+                											<a ref="nav_click" href="/search/query/cat/all/key/python">搜尋結果</a>	
+					                	        	        	&gt;
+                											圖書					                	 
+        </div>
+	<!--導覽 止-->
+	<div class="container_24 clearfix container_24bg">
+		<div class="grid_20 push_4">
+			<!-- 熱門搜尋 -->
+			<blockquote class="mod cntblqsearch01">
+				<h4>熱門搜尋</h4>
+				<ul class="blq01">
+                                        <li  class="first">
+                    <a rel="top_key" title="無印良品" href="/search/query/cat/all/key/%E7%84%A1%E5%8D%B0%E8%89%AF%E5%93%81/spell/1">無印良品</a></li>
+                                        <li >
+                    <a rel="top_key" title="Joeman" href="/search/query/cat/all/key/Joeman/spell/1">Joeman</a></li>
+                                        <li >
+                    <a rel="top_key" title="星巴克" href="/search/query/cat/all/key/%E6%98%9F%E5%B7%B4%E5%85%8B/spell/1">星巴克</a></li>
+                                        <li >
+                    <a rel="top_key" title="多益" href="/search/query/cat/all/key/%E5%A4%9A%E7%9B%8A/spell/1">多益</a></li>
+                                        <li >
+                    <a rel="top_key" title="東野圭吾" href="/search/query/cat/all/key/%E6%9D%B1%E9%87%8E%E5%9C%AD%E5%90%BE/spell/1">東野圭吾</a></li>
+                                        <li >
+                    <a rel="top_key" title="名偵探柯南" href="/search/query/cat/all/key/%E5%90%8D%E5%81%B5%E6%8E%A2%E6%9F%AF%E5%8D%97/spell/1">名偵探柯南</a></li>
+                                        <li >
+                    <a rel="top_key" title="你的孩子不是你的孩子" href="/search/query/cat/all/key/%E4%BD%A0%E7%9A%84%E5%AD%A9%E5%AD%90%E4%B8%8D%E6%98%AF%E4%BD%A0%E7%9A%84%E5%AD%A9%E5%AD%90/spell/1">你的孩子不是你的孩子</a></li>
+                                        <li >
+                    <a rel="top_key" title="角落生物" href="/search/query/cat/all/key/%E8%A7%92%E8%90%BD%E7%94%9F%E7%89%A9/spell/1">角落生物</a></li>
+                                        <li >
+                    <a rel="top_key" title="拼圖" href="/search/query/cat/all/key/%E6%8B%BC%E5%9C%96/spell/1">拼圖</a></li>
+                                        <li >
+                    <a rel="top_key" title="生酮" href="/search/query/cat/all/key/%E7%94%9F%E9%85%AE/spell/1">生酮</a></li>
+                                    </ul>
+			</blockquote>
+			<!-- 熱門搜尋 end -->
+			<!--您是不是想找 始-->
+			         	<div class="mod search-mod-03 clearfix">
+            	<h4>您是不是想找: </h4>  
+            	<ul>        
+											<li><a rel="recommender_keyword_list" title="Python" href="//search.books.com.tw/redirect/move/key/Python/area/recommender_keyword_list/reprodidx/1/spell/1">Python</a></li>
+											<li><a rel="recommender_keyword_list" title="arduino" href="//search.books.com.tw/redirect/move/key/arduino/area/recommender_keyword_list/reprodidx/2/spell/1">arduino</a></li>
+											<li><a rel="recommender_keyword_list" title="TENSORFLOW" href="//search.books.com.tw/redirect/move/key/TENSORFLOW/area/recommender_keyword_list/reprodidx/3/spell/1">TENSORFLOW</a></li>
+											<li><a rel="recommender_keyword_list" title="django" href="//search.books.com.tw/redirect/move/key/django/area/recommender_keyword_list/reprodidx/4/spell/1">django</a></li>
+											<li><a rel="recommender_keyword_list" title="R語言" href="//search.books.com.tw/redirect/move/key/R語言/area/recommender_keyword_list/reprodidx/5/spell/1">R語言</a></li>
+											<li><a rel="recommender_keyword_list" title="JAVA" href="//search.books.com.tw/redirect/move/key/JAVA/area/recommender_keyword_list/reprodidx/6/spell/1">JAVA</a></li>
+											<li><a rel="recommender_keyword_list" title="raspberry" href="//search.books.com.tw/redirect/move/key/raspberry/area/recommender_keyword_list/reprodidx/7/spell/1">raspberry</a></li>
+											<li><a rel="recommender_keyword_list" title="linux" href="//search.books.com.tw/redirect/move/key/linux/area/recommender_keyword_list/reprodidx/8/spell/1">linux</a></li>
+											<li><a rel="recommender_keyword_list" title="swift" href="//search.books.com.tw/redirect/move/key/swift/area/recommender_keyword_list/reprodidx/9/spell/1">swift</a></li>
+											<li><a rel="recommender_keyword_list" title="深度學習" href="//search.books.com.tw/redirect/move/key/深度學習/area/recommender_keyword_list/reprodidx/10/spell/1">深度學習</a></li>
+					            	</ul>          
+        	</div>
+        	    
+	        <!--您是不是想找 止-->
+						<!-- 搜尋結果 始-->
+			<div class="mod">
+				<div class="cntlisearch07 clearfix">
+                                    <div class="list">
+						<p>顯示模式</p>
+						<ul>
+							<!--下方li中:非該模式按鈕的a, class為nohere標簽-->
+							<li class="pandt" title="圖文模式"><span>圖文模式</span></li>
+							<li class="pic" title="圖片模式"><a class="nohere" href='#' onclick='changeView(this)'><span>圖片模式</span></a></li>
+						</ul>
+						<div class="sort">
+							<form name="form1" method="post">
+								排序依 <select name="select" size="1" onchange="window.location=this.value;">
+																		<option value="/search/query/cat/1/key/python/sort/1" selected>準確度</option>
+									<option value="/search/query/cat/1/key/python/sort/5" >上市日期(新→舊)</option>
+									<option value="/search/query/cat/1/key/python/sort/6" >上市日期(舊→新)</option>
+									<option value="/search/query/cat/1/key/python/sort/7" >優惠價(高→低)</option>
+									<option value="/search/query/cat/1/key/python/sort/8" >優惠價(低→高)</option>
+									<option value="/search/query/cat/1/key/python/sort/9" >暢銷度</option>
+								</select>
+							</form>
+						</div>
+					</div>
+					<ul class="about">
+												<li>查詢關鍵字 <span>python</span></li>
+												<li>搜尋結果共 <span>2172</span> 筆, 頁數 <strong>1</strong> / 109</li>
+                	</ul>
+				</div>
+			</div>
+			<!--搜尋結果排序及顯示模式 止-->
+			<!--搜尋結果商品 始-->
+			<div class="mod">
+				<div class="cntlisearch08">
+					<form class="result" id="searchlist">
+						<ul class="searchbook">
+                    		                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010792124" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010792124/page/1/idx/1/cat/001/pdf/1"
+								   title="Python大數據特訓班：資料自動化收集、整理、分析、儲存與應用實戰(附近300分鐘影音教學/範例程式)">
+								   <img class="itemcov"
+										alt="Python大數據特訓班：資料自動化收集、整理、分析、儲存與應用實戰(附近300分鐘影音教學/範例程式)"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/079/21/0010792124.jpg&w=85&h=120&v=5b3a0cc0"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010792124/page/1/idx/1/cat/001/pdf/1"
+									   title="Python大數據特訓班：資料自動化收集、整理、分析、儲存與應用實戰(附近300分鐘影音教學/範例程式)">
+											<em>Python</em>大數據特訓班：資料自動化收集、整理、分析、儲存與應用實戰(附近300分鐘影音教學/範例程式)									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E6%96%87%E6%B7%B5%E9%96%A3%E5%B7%A5%E4%BD%9C%E5%AE%A4/adv_author/1"
+											   title="文淵閣工作室">文淵閣工作室</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/gotop/page/1/item/0010792124/idx/1/cat/001/pdf/1"
+												 title="碁峰">碁峰</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2018-07-11<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>79</b> 折</strong>, <strong><b>356</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010792124/page/1/cart/1/idx/1/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010792124/page/1/epub/1/idx/1/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p>國內<em>Python</em>最暢銷作者團隊重磅力作!   迅速掌握資料處理要領，深入各式專案主題   立即體驗<em>Python</em>的大數據超強實戰力!   面對大數據資料   如何爬取?如何整理?   如何呈現?最後要如何保留?   就用生活化的專題實戰全面...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010792124/page/1/idx/1/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010761759" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010761759/page/1/idx/2/cat/001/pdf/1"
+								   title="Deep Learning：用Python進行深度學習的基礎理論實作">
+								   <img class="itemcov"
+										alt="Deep Learning：用Python進行深度學習的基礎理論實作"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/076/17/0010761759.jpg&w=85&h=120&v=59893e71"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010761759/page/1/idx/2/cat/001/pdf/1"
+									   title="Deep Learning：用Python進行深度學習的基礎理論實作">
+											Deep Learning：用<em>Python</em>進行深度學習的基礎理論實作									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E6%96%8E%E8%97%A4%E5%BA%B7%E6%AF%85/adv_author/1"
+											   title="斎藤康毅">斎藤康毅</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E5%90%B3%E5%98%89%E8%8A%B3/adv_author/1"
+											   title="吳嘉芳">吳嘉芳</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/oreilly/page/1/item/0010761759/idx/2/cat/001/pdf/1"
+												 title="歐萊禮">歐萊禮</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2017-08-17<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>79</b> 折</strong>, <strong><b>458</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010761759/page/1/cart/1/idx/2/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010761759/page/1/epub/1/idx/2/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p>   本書的目標是，盡量避免使用不瞭解內容的「黑盒子」，以基礎的知識為起點，以容易上手的<em>Python</em>撰寫程式，從動手實作的過程中，一步步深入瞭解深度學習。若以車用書籍來比喻這本書的話，這本書並不屬於汽車駕訓教材，而是希望能夠幫助您瞭解車子的原理...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010761759/page/1/idx/2/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010790699" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010790699/page/1/idx/3/cat/001/pdf/1"
+								   title="Python深度學習實作：Keras快速上手">
+								   <img class="itemcov"
+										alt="Python深度學習實作：Keras快速上手"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/079/06/0010790699.jpg&w=85&h=120&v=5b2894da"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010790699/page/1/idx/3/cat/001/pdf/1"
+									   title="Python深度學習實作：Keras快速上手">
+											<em>Python</em>深度學習實作：Keras快速上手									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E5%8B%9E%E8%99%B9%E5%B5%90/adv_author/1"
+											   title="勞虹嵐">勞虹嵐</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E8%AC%9D%E6%A2%81/adv_author/1"
+											   title="謝梁">謝梁</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E9%AD%AF%E7%A9%8E/adv_author/1"
+											   title="魯穎">魯穎</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E5%BB%96%E4%BF%A1%E5%BD%A5/adv_author/1"
+											   title="廖信彥">廖信彥</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/drmaster/page/1/item/0010790699/idx/3/cat/001/pdf/1"
+												 title="博碩">博碩</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2018-06-28<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>9</b> 折</strong>, <strong><b>450</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010790699/page/1/cart/1/idx/3/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010790699/page/1/epub/1/idx/3/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p>*系統地講解深度學習的基本知識、建模過程和應用，是非常好的深度學習入門書。   *以推薦系統、圖形識別、自然語言處理、文字產生和時間序列的具體應用作為案例。   *從工具準備、資料擷取和處理，到針對問... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010790699/page/1/idx/3/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010768474" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010768474/page/1/idx/4/cat/001/pdf/1"
+								   title="Python零基礎入門班：一次打好程式設計與邏輯訓練基本功!(附120分鐘影音教學/範例程式)">
+								   <img class="itemcov"
+										alt="Python零基礎入門班：一次打好程式設計與邏輯訓練基本功!(附120分鐘影音教學/範例程式)"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/076/84/0010768474.jpg&w=85&h=120&v=59e5dbaa"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010768474/page/1/idx/4/cat/001/pdf/1"
+									   title="Python零基礎入門班：一次打好程式設計與邏輯訓練基本功!(附120分鐘影音教學/範例程式)">
+											<em>Python</em>零基礎入門班：一次打好程式設計與邏輯訓練基本功!(附120分鐘影音教學/範例程式)									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E6%96%87%E6%B7%B5%E9%96%A3%E5%B7%A5%E4%BD%9C%E5%AE%A4/adv_author/1"
+											   title="文淵閣工作室">文淵閣工作室</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E9%84%A7%E6%96%87%E6%B7%B5/adv_author/1"
+											   title="鄧文淵">鄧文淵</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/gotop/page/1/item/0010768474/idx/4/cat/001/pdf/1"
+												 title="碁峰">碁峰</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2017-10-25<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>79</b> 折</strong>, <strong><b>308</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010768474/page/1/cart/1/idx/4/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010768474/page/1/epub/1/idx/4/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p>大數據時代、新課綱世代 跨入程式語言，鍛鍊邏輯思維 就從<em>Python</em>開始學!   要懂<em>Python</em>   就要這樣真正的入門   徹底掌握程式語言與設計的核心!   <em>Python</em>是目前最熱門的程式語言，執行功能強大，但語法卻簡潔優雅、易於...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010768474/page/1/idx/4/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010787989" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010787989/page/1/idx/5/cat/001/pdf/1"
+								   title="Python GUI程式設計：PyQt5實戰">
+								   <img class="itemcov"
+										alt="Python GUI程式設計：PyQt5實戰"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/078/79/0010787989.jpg&w=85&h=120&v=5afd5ab7"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010787989/page/1/idx/5/cat/001/pdf/1"
+									   title="Python GUI程式設計：PyQt5實戰">
+											<em>Python</em> GUI程式設計：PyQt5實戰									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E5%AD%AB%E6%B4%8B%E6%B4%8B/adv_author/1"
+											   title="孫洋洋">孫洋洋</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E7%8E%8B%E7%A2%A9/adv_author/1"
+											   title="王碩">王碩</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E5%BB%96%E4%BF%A1%E5%BD%A5/adv_author/1"
+											   title="廖信彥">廖信彥</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/drmaster/page/1/item/0010787989/idx/5/cat/001/pdf/1"
+												 title="博碩">博碩</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2018-05-29<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>79</b> 折</strong>, <strong><b>545</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010787989/page/1/cart/1/idx/5/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010787989/page/1/epub/1/idx/5/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p>從入門到實作應用   帶領您走進圖形化介面的世界   PyQt是<em>Python</em>用來撰寫圖形化使用者介面(GUI)的解決方案，可以用來代替<em>Python</em>內建的Tkinter。<em>Python</em>可以說是世界上極為廣泛、也非常簡單的程式語言，Qt則是最...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010787989/page/1/idx/5/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010690075" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010690075/page/1/idx/6/cat/001/pdf/1"
+								   title="精通 Python：運用簡單的套件進行現代運算">
+								   <img class="itemcov"
+										alt="精通 Python：運用簡單的套件進行現代運算"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/069/00/0010690075.jpg&w=85&h=120&v=55f2adde"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010690075/page/1/idx/6/cat/001/pdf/1"
+									   title="精通 Python：運用簡單的套件進行現代運算">
+											精通 <em>Python</em>：運用簡單的套件進行現代運算									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/Bill+Lubanovic/adv_author/1"
+											   title="Bill Lubanovic">Bill Lubanovic</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E8%B3%B4%E5%B1%B9%E6%B0%91/adv_author/1"
+											   title="賴屹民">賴屹民</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/oreilly/page/1/item/0010690075/idx/6/cat/001/pdf/1"
+												 title="歐萊禮">歐萊禮</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2015-09-22<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>79</b> 折</strong>, <strong><b>616</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010690075/page/1/cart/1/idx/6/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010690075/page/1/epub/1/idx/6/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p>&ldquo;本書是 Bill Lubanovic 的傑作，先為你紮下深厚的程式設計基礎，再教你使用大量 <em>Python</em> 工具箱處理現實生活中的問題，本書絕對適合學習如何運用 <em>Python</em> 來解決問題。&rdquo; &mdash;Lo&iuml;c Pefferkorn, 開放碼源...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010690075/page/1/idx/6/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010757756" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010757756/page/1/idx/7/cat/001/pdf/1"
+								   title="Python初學特訓班(增訂版)(附250分鐘影音教學/範例程式)">
+								   <img class="itemcov"
+										alt="Python初學特訓班(增訂版)(附250分鐘影音教學/範例程式)"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/075/77/0010757756.jpg&w=85&h=120&v=59562879"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010757756/page/1/idx/7/cat/001/pdf/1"
+									   title="Python初學特訓班(增訂版)(附250分鐘影音教學/範例程式)">
+											<em>Python</em>初學特訓班(增訂版)(附250分鐘影音教學/範例程式)									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E6%96%87%E6%B7%B5%E9%96%A3%E5%B7%A5%E4%BD%9C%E5%AE%A4+%E7%B7%A8%E8%91%97/adv_author/1"
+											   title="文淵閣工作室/編著">文淵閣工作室/編著</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/gotop/page/1/item/0010757756/idx/7/cat/001/pdf/1"
+												 title="碁峰">碁峰</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2017-07-11<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>79</b> 折</strong>, <strong><b>379</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010757756/page/1/cart/1/idx/7/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010757756/page/1/epub/1/idx/7/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p><em>Python</em>學習新經典! 榮登各大網路書店電腦暢銷書/知名電腦專業書店暢銷書 榮獲眾多讀者肯定與近100位老師滿意的<em>Python</em>書籍   解決初學痛點，避免開發地雷，   融入主流技術，結合250分鐘影音教學，   從180個範例徹底掌握...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010757756/page/1/idx/7/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010791110" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010791110/page/1/idx/8/cat/001/pdf/1"
+								   title="Python零基礎最強入門之路：王者歸來">
+								   <img class="itemcov"
+										alt="Python零基礎最強入門之路：王者歸來"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/079/11/0010791110.jpg&w=85&h=120&v=5b2ccfcf"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010791110/page/1/idx/8/cat/001/pdf/1"
+									   title="Python零基礎最強入門之路：王者歸來">
+											<em>Python</em>零基礎最強入門之路：王者歸來									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E6%B4%AA%E9%8C%A6%E9%AD%81/adv_author/1"
+											   title="洪錦魁">洪錦魁</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/deepstone1/page/1/item/0010791110/idx/8/cat/001/pdf/1"
+												 title="深石">深石</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2018-07-05<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>79</b> 折</strong>, <strong><b>411</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010791110/page/1/cart/1/idx/8/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010791110/page/1/epub/1/idx/8/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p>本書以約500個程式實例講解了下列知識：   □完整<em>Python</em>語法   □串列(list)、元組(tuple)、字典(dict)、集合(set)   □函數與類別計   □使用系統與外部模組(module)   □設計自己的模組...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010791110/page/1/idx/8/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010774605" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010774605/page/1/idx/9/cat/001/pdf/1"
+								   title="金融科技實戰：Python與量化投資">
+								   <img class="itemcov"
+										alt="金融科技實戰：Python與量化投資"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/077/46/0010774605.jpg&w=85&h=120&v=5a3b8d69"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010774605/page/1/idx/9/cat/001/pdf/1"
+									   title="金融科技實戰：Python與量化投資">
+											金融科技實戰：<em>Python</em>與量化投資									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E8%94%A1%E7%AB%8B%E8%80%91/adv_author/1"
+											   title="蔡立耑">蔡立耑</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/drmaster/page/1/item/0010774605/idx/9/cat/001/pdf/1"
+												 title="博碩">博碩</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2018-01-05<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>79</b> 折</strong>, <strong><b>514</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010774605/page/1/cart/1/idx/9/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010774605/page/1/epub/1/idx/9/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p>決策，不同於以往的主觀交易。本書旨在對量化投資作廣泛與初步的介紹，並佐以<em>Python</em>語言實作，希冀讀者能藉此書對資訊科技與金融結合應用，略窺一斑。   量化投資的模型很容易因建模者的能力不同而良莠不齊。既然主觀交易有諸多限制，量化交易看來又...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010774605/page/1/idx/9/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010774364" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010774364/page/1/idx/10/cat/001/pdf/1"
+								   title="Python資料科學學習手冊">
+								   <img class="itemcov"
+										alt="Python資料科學學習手冊"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/077/43/0010774364.jpg&w=85&h=120&v=5a3a3bd4"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010774364/page/1/idx/10/cat/001/pdf/1"
+									   title="Python資料科學學習手冊">
+											<em>Python</em>資料科學學習手冊									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/Jake+VanderPlas/adv_author/1"
+											   title="Jake VanderPlas">Jake VanderPlas</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E4%BD%95%E6%95%8F%E7%85%8C/adv_author/1"
+											   title="何敏煌">何敏煌</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/oreilly/page/1/item/0010774364/idx/10/cat/001/pdf/1"
+												 title="歐萊禮">歐萊禮</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2017-12-28<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>79</b> 折</strong>, <strong><b>616</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010774364/page/1/cart/1/idx/10/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010774364/page/1/epub/1/idx/10/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p>需要處理大量資料的人必備的案頭書   對於許多研究人員來說，<em>Python</em>是首選的工具，因為它擁有豐富的儲存、操作、以及洞察資料的程式庫。這些資源散布在資料科學的領域中，但藉由本書，你可以一口氣取得這些資源，包括Ipython、NumPy...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010774364/page/1/idx/10/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010773177" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010773177/page/1/idx/11/cat/001/pdf/1"
+								   title="Python入門邁向高手之路王者歸來(附光碟)">
+								   <img class="itemcov"
+										alt="Python入門邁向高手之路王者歸來(附光碟)"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/077/31/0010773177.jpg&w=85&h=120&v=5a27c6d4"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010773177/page/1/idx/11/cat/001/pdf/1"
+									   title="Python入門邁向高手之路王者歸來(附光碟)">
+											<em>Python</em>入門邁向高手之路王者歸來(附光碟)									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E6%B4%AA%E9%8C%A6%E9%AD%81/adv_author/1"
+											   title="洪錦魁">洪錦魁</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/deepstone1/page/1/item/0010773177/idx/11/cat/001/pdf/1"
+												 title="深石">深石</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2017-12-21<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>79</b> 折</strong>, <strong><b>552</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010773177/page/1/cart/1/idx/11/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010773177/page/1/epub/1/idx/11/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p>這本書將在北京清華大學與台灣深石數位科技同步發行，這是一本從入門到應用完整學習<em>Python</em> 語言的書籍，全書超過800 個程式實例，一步一步講解所有相關基礎與應用的知識。即使你沒有程式語言的經驗也可以透過程式實例，快速完整的學會...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010773177/page/1/idx/11/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010790747" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010790747/page/1/idx/12/cat/001/pdf/1"
+								   title="Python新手使用Django架站技術實作：活用Django 2.0 Web Framework建構動態網站的16堂課">
+								   <img class="itemcov"
+										alt="Python新手使用Django架站技術實作：活用Django 2.0 Web Framework建構動態網站的16堂課"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/079/07/0010790747.jpg&w=85&h=120&v=5b28e93b"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010790747/page/1/idx/12/cat/001/pdf/1"
+									   title="Python新手使用Django架站技術實作：活用Django 2.0 Web Framework建構動態網站的16堂課">
+											<em>Python</em>新手使用Django架站技術實作：活用Django 2.0 Web Framework建構動態網站的16堂課									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E4%BD%95%E6%95%8F%E7%85%8C/adv_author/1"
+											   title="何敏煌">何敏煌</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E6%9E%97%E4%BA%AE%E6%98%80/adv_author/1"
+											   title="林亮昀">林亮昀</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/drmaster/page/1/item/0010790747/idx/12/cat/001/pdf/1"
+												 title="博碩">博碩</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2018-06-28<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>9</b> 折</strong>, <strong><b>621</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010790747/page/1/cart/1/idx/12/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010790747/page/1/epub/1/idx/12/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p><em>Python</em>已經是目前最受歡迎的程式語言之一，而Django則是<em>Python</em>語言裡最廣為使用的Web Framework。任何想要以<em>Python</em>來製作動態資料網站的朋友，不需要煩雜的設定，只要以pip安裝之後即可建立一個自帶測試用網頁...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010790747/page/1/idx/12/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010786530" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010786530/page/1/idx/13/cat/001/pdf/1"
+								   title="超圖解 Python 物聯網實作入門：使用 ESP8266 與 MicroPython">
+								   <img class="itemcov"
+										alt="超圖解 Python 物聯網實作入門：使用 ESP8266 與 MicroPython"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/078/65/0010786530.jpg&w=85&h=120&v=5ae99403"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010786530/page/1/idx/13/cat/001/pdf/1"
+									   title="超圖解 Python 物聯網實作入門：使用 ESP8266 與 MicroPython">
+											超圖解 <em>Python</em> 物聯網實作入門：使用 ESP8266 與 MicroPython									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E8%B6%99%E8%8B%B1%E5%82%91/adv_author/1"
+											   title="趙英傑">趙英傑</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/flag/page/1/item/0010786530/idx/13/cat/001/pdf/1"
+												 title="旗標">旗標</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2018-05-10<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>95</b> 折</strong>, <strong><b>664</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010786530/page/1/cart/1/idx/13/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010786530/page/1/epub/1/idx/13/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p>本書是創客教學經典《超圖解 Arduino 互動設計入門》的姊妹作。是一本結合 <em>Python</em> 語言、電子電路、微電腦控制和物聯網相關技術的入門書。   <em>Python</em> 無疑是近年最受注目的通用型程式語言。它的語法簡單易學。不僅智慧型手機...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010786530/page/1/idx/13/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010779462" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010779462/page/1/idx/14/cat/001/pdf/1"
+								   title="圖說演算法：使用Python">
+								   <img class="itemcov"
+										alt="圖說演算法：使用Python"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/077/94/0010779462.jpg&w=85&h=120&v=5a798440"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010779462/page/1/idx/14/cat/001/pdf/1"
+									   title="圖說演算法：使用Python">
+											圖說演算法：使用<em>Python</em>									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E5%90%B3%E7%87%A6%E9%8A%98/adv_author/1"
+											   title="吳燦銘">吳燦銘</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E8%83%A1%E6%98%AD%E6%B0%91/adv_author/1"
+											   title="胡昭民">胡昭民</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/drmaster/page/1/item/0010779462/idx/14/cat/001/pdf/1"
+												 title="博碩">博碩</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2018-02-13<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>79</b> 折</strong>, <strong><b>300</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010779462/page/1/cart/1/idx/14/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010779462/page/1/epub/1/idx/14/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p>理解零負擔，採高 CP 值 <em>Python</em> 語言實作 一本輕量級演算法，是您獲得程式設計新技能，提升自我價值的最好投資   當「寫程式」納入必修課程的趨勢下，程式設計或設計APP已是大部分學生或社會人士必須具備的基礎能力。而演算法更是用來...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010779462/page/1/idx/14/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010775718" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010775718/page/1/idx/15/cat/001/pdf/1"
+								   title="Python 技術手冊(第三版)">
+								   <img class="itemcov"
+										alt="Python 技術手冊(第三版)"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/077/57/0010775718.jpg&w=85&h=120&v=5a4cb0ba"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010775718/page/1/idx/15/cat/001/pdf/1"
+									   title="Python 技術手冊(第三版)">
+											<em>Python</em> 技術手冊(第三版)									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/Alex+Martelli/adv_author/1"
+											   title="Alex Martelli">Alex Martelli</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/Anna+Ravenscroft/adv_author/1"
+											   title="Anna Ravenscroft">Anna Ravenscroft</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/Steve+Holden/adv_author/1"
+											   title="Steve Holden">Steve Holden</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E9%BB%83%E9%8A%98%E5%81%89/adv_author/1"
+											   title="黃銘偉">黃銘偉</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/oreilly/page/1/item/0010775718/idx/15/cat/001/pdf/1"
+												 title="歐萊禮">歐萊禮</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2018-01-12<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>79</b> 折</strong>, <strong><b>695</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010775718/page/1/cart/1/idx/15/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010775718/page/1/epub/1/idx/15/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p>涵蓋<em>Python</em> 2.7&amp;3.5 重點提示3.6新功能   快速參考指南   「本書不僅無所不包，<em>Python</em>有的書中都有，而且容易理解。它清楚解釋了<em>Python</em>中每個部分存在的理由，以及你應該用何種思維組合它們。」 &mdash;Peter...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010775718/page/1/idx/15/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010788444" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010788444/page/1/idx/16/cat/001/pdf/1"
+								   title="優雅的SciPy：Python科學研究的美學">
+								   <img class="itemcov"
+										alt="優雅的SciPy：Python科學研究的美學"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/078/84/0010788444.jpg&w=85&h=120&v=5b0542e5"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010788444/page/1/idx/16/cat/001/pdf/1"
+									   title="優雅的SciPy：Python科學研究的美學">
+											優雅的SciPy：<em>Python</em>科學研究的美學									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/Harriet+Dashnow/adv_author/1"
+											   title="Harriet Dashnow">Harriet Dashnow</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/Juan+Nunez-Iglesias/adv_author/1"
+											   title="Juan Nunez-Iglesias">Juan Nunez-Iglesias</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/St%C3%A9fan+van+der+Walt/adv_author/1"
+											   title="Stéfan van der Walt">Stéfan van der Walt</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E5%BC%B5%E9%9D%9C%E9%9B%AF/adv_author/1"
+											   title="張靜雯">張靜雯</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/oreilly/page/1/item/0010788444/idx/16/cat/001/pdf/1"
+												 title="歐萊禮">歐萊禮</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2018-06-01<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>79</b> 折</strong>, <strong><b>458</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010788444/page/1/cart/1/idx/16/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010788444/page/1/epub/1/idx/16/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p>&ldquo;本書滿足以下重要需求：引導學生優雅的實作訊號與影像、圖學和生物資訊學中的經典演算法&rdquo;-Lav Varshney University of Illinois    &ldquo;雖然沒有一本書可以教完科學研究<em>Python</em>的所有工具，但是有這本書會讓...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010788444/page/1/idx/16/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010775076" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010775076/page/1/idx/17/cat/001/pdf/1"
+								   title="Python深度學習">
+								   <img class="itemcov"
+										alt="Python深度學習"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/077/50/0010775076.jpg&w=85&h=120&v=5a4224c5"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010775076/page/1/idx/17/cat/001/pdf/1"
+									   title="Python深度學習">
+											<em>Python</em>深度學習									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/Daniel+Slater/adv_author/1"
+											   title="Daniel Slater">Daniel Slater</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/Gianmario+Spacagna/adv_author/1"
+											   title="Gianmario Spacagna">Gianmario Spacagna</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/Valentino+Zocca/adv_author/1"
+											   title="Valentino Zocca">Valentino Zocca</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E5%8A%89%E7%AB%8B%E6%B0%91/adv_author/1"
+											   title="劉立民">劉立民</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E5%90%B3%E5%BB%BA%E8%8F%AF/adv_author/1"
+											   title="吳建華">吳建華</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E9%99%B3%E9%96%8B%E7%85%87/adv_author/1"
+											   title="陳開煇">陳開煇</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/Peter+Roelants/adv_author/1"
+											   title="Peter Roelants">Peter Roelants</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/drmaster/page/1/item/0010775076/idx/17/cat/001/pdf/1"
+												 title="博碩">博碩</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2018-01-05<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>79</b> 折</strong>, <strong><b>490</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010775076/page/1/cart/1/idx/17/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010775076/page/1/epub/1/idx/17/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p>機器學習觀念具有一些基本認識，對<em>Python</em>程式設計有一些經驗的數據科學從業人員，或是立志成為資料科學家的人。同時也需對微積分和統計學的基本觀念有相當程度的理解。   你能夠從本書學習到：   &bull;深度學習演算的深入實務認識。   &bull;進一步地以...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010775076/page/1/idx/17/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010790803" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010790803/page/1/idx/18/cat/001/pdf/1"
+								   title="用Python學程式設計運算思維(收錄MTA Python微軟國際認證模擬試題)">
+								   <img class="itemcov"
+										alt="用Python學程式設計運算思維(收錄MTA Python微軟國際認證模擬試題)"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/079/08/0010790803.jpg&w=85&h=120&v=5b2a2cf8"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010790803/page/1/idx/18/cat/001/pdf/1"
+									   title="用Python學程式設計運算思維(收錄MTA Python微軟國際認證模擬試題)">
+											用<em>Python</em>學程式設計運算思維(收錄MTA <em>Python</em>微軟國際認證模擬試題)									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E6%9D%8E%E5%95%9F%E9%BE%8D/adv_author/1"
+											   title="李啟龍">李啟龍</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/gotop/page/1/item/0010790803/idx/18/cat/001/pdf/1"
+												 title="碁峰">碁峰</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2018-06-26<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>95</b> 折</strong>, <strong><b>399</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010790803/page/1/cart/1/idx/18/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010790803/page/1/epub/1/idx/18/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p>*培養「大學程式設計先修檢測APCS」技能   *收錄MTA <em>Python</em>微軟國際認證模擬試題   *本書適合想打好<em>Python</em>程式設計基礎者，章節安排由淺而深，以循序漸進的方式來介紹<em>Python</em>程式語言最核心的知識。   *程式範例架構...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010790803/page/1/idx/18/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010792131" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010792131/page/1/idx/19/cat/001/pdf/1"
+								   title="Python程式設計實務：從初學到活用Python開發技巧的16堂課(第二版)">
+								   <img class="itemcov"
+										alt="Python程式設計實務：從初學到活用Python開發技巧的16堂課(第二版)"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/079/21/0010792131.jpg&w=85&h=120&v=5b3a0cc6"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010792131/page/1/idx/19/cat/001/pdf/1"
+									   title="Python程式設計實務：從初學到活用Python開發技巧的16堂課(第二版)">
+											<em>Python</em>程式設計實務：從初學到活用<em>Python</em>開發技巧的16堂課(第二版)									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/%E4%BD%95%E6%95%8F%E7%85%8C/adv_author/1"
+											   title="何敏煌">何敏煌</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/drmaster/page/1/item/0010792131/idx/19/cat/001/pdf/1"
+												 title="博碩">博碩</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2018-07-13<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>78</b> 折</strong>, <strong><b>437</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010792131/page/1/cart/1/idx/19/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010792131/page/1/epub/1/idx/19/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p>【避開精巧但難懂的語法，全程使用<em>Python</em> 3，以實用性為主要程式設計教學內容】   【善用<em>Python</em>模組，學習以最簡短的程式碼做最佳的應用，如控制Google語音】   【運用網路資料操作Firebase和Facebook...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010792131/page/1/idx/19/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                    	                    	<li class="item">
+								<!--若無勾選選項時,可將下方input_buy的div整個拿掉-->
+	                        		                        	<div class="input_buy">
+									<input type="checkbox" value="0010739372" name="C1" />
+								</div>
+									                        	<a target="_blank" rel="mid_image"
+								   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010739372/page/1/idx/20/cat/001/pdf/1"
+								   title="Python 自動化的樂趣：搞定重複瑣碎&amp;單調無聊的工作">
+								   <img class="itemcov"
+										alt="Python 自動化的樂趣：搞定重複瑣碎&amp;單調無聊的工作"
+										data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/073/93/0010739372.jpg&w=85&h=120&v=585a59ac"
+										width="85"
+										height="120">
+								</a>
+								<h3>
+									<a target="_blank" rel="mid_name"
+									   href="//search.books.com.tw/redirect/move/key/python/area/mid/item/0010739372/page/1/idx/20/cat/001/pdf/1"
+									   title="Python 自動化的樂趣：搞定重複瑣碎&amp;單調無聊的工作">
+											<em>Python</em> 自動化的樂趣：搞定重複瑣碎&amp;單調無聊的工作									</a>
+								</h3>
+								<span class="cat">中文書</span>
+	                        	,   
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/Al+Sweigart/adv_author/1"
+											   title="Al Sweigart">Al Sweigart</a>
+	                            	&nbsp;  
+				                            <a rel="go_author"
+											   href="//search.books.com.tw/search/query/cat/1/key/H%26amp%3BC/adv_author/1"
+											   title="H&amp;C">H&amp;C</a>
+	                            		                        		                       				                            											, <a target="_blank" rel="mid_publish"
+												 href="//search.books.com.tw/redirect/move/type/001/key/python/area/mid_publish/pubid/gotop/page/1/item/0010739372/idx/20/cat/001/pdf/1"
+												 title="碁峰">碁峰</a>
+		                            	                        	                         
+	                            	                                	, 出版日期: 2016-12-29<br/>                         
+	                            	                        	                        <span class="price">
+	                        																優惠價: <strong><b>79</b> 折</strong>, <strong><b>395</b> 元</strong>
+																									<button id="mid_cart" class="btn_type01" onClick="redirect('//search.books.com.tw/redirect/move/key/python/area/mid_cart/item/0010739372/page/1/cart/1/idx/20/cat/001/pdf/1');return false;">放入購物車</button>
+									                        	                        								<button id="mid_epub" class="btn_type01 btn_font1" onClick="rewopen('//search.books.com.tw/redirect/move/key/python/area/mid_epub/item/0010739372/page/1/epub/1/idx/20/cat/001/pdf/1', '_blank');return false;">試閱</button>   
+	                        	                        	                        </span>
+	                          
+	                            <p>運用<em>Python</em>寫出程式，幫您在幾分鐘內搞定平常以人工手動處理需要花費數小時的工作。一旦掌握了程式設計的基礎知識，就能輕鬆使用<em>Python</em>編寫程式，把自動化的好用和效率應用在下列這些工作上：   ‧在一個或多個檔案中搜尋文字   ‧建立、更新...... <span><a target="_blank" rel="mid_more" href="//search.books.com.tw/redirect/move/key/python/area/mid_more/item/0010739372/page/1/idx/20/cat/001/pdf/1">more</a></span>
+								</p>
+	                        	                    </li>
+                                    	</ul>
+				</form>
+				</div>
+			</div>
+			<!--搜尋結果商品 止-->
+			<!--商品下方按鈕如:此頁全選 始-->
+			<div class="mod">
+				<div class="cntlisearch09 clearfix">
+					<button class="btn_type01" onclick="item_putcart();return false;">放入購物車</button>
+					<button class="btn_type01" onclick="item_select(false);return false;">重新選擇</button>
+					<button class="btn_type01" onclick="item_select(true);return false;">此頁全選</button>
+					            	</div>
+			</div>
+		<!--商品下方按鈕如:此頁全選 止-->
+		<!--頁數 始-->
+        			<div class="mod">
+				<div class="cntlisearch10">
+					<div class="page">
+						共 <span>109</span> 頁						<a class="prv" rel="change_page"
+							 href="#" onClick="return false;" >上一頁</a>
+																					<span class="here">1</span>
+																												<a rel="change_page" href="//search.books.com.tw/search/query/cat/1/key/python/sort/1/page/2/v/0/">2</a>
+																												<a rel="change_page" href="//search.books.com.tw/search/query/cat/1/key/python/sort/1/page/3/v/0/">3</a>
+																												<a rel="change_page" href="//search.books.com.tw/search/query/cat/1/key/python/sort/1/page/4/v/0/">4</a>
+																												<a rel="change_page" href="//search.books.com.tw/search/query/cat/1/key/python/sort/1/page/5/v/0/">5</a>
+																												<a rel="change_page" href="//search.books.com.tw/search/query/cat/1/key/python/sort/1/page/6/v/0/">6</a>
+																												<a rel="change_page" href="//search.books.com.tw/search/query/cat/1/key/python/sort/1/page/7/v/0/">7</a>
+																												<a rel="change_page" href="//search.books.com.tw/search/query/cat/1/key/python/sort/1/page/8/v/0/">8</a>
+																												<a rel="change_page" href="//search.books.com.tw/search/query/cat/1/key/python/sort/1/page/9/v/0/">9</a>
+																												<a rel="change_page" href="//search.books.com.tw/search/query/cat/1/key/python/sort/1/page/10/v/0/">10</a>
+																			<a class="nxt" rel="change_page"
+												   href="//search.books.com.tw/search/query/cat/1/key/python/sort/1/page/2/v/0/"
+						>下一頁</a>
+					   跳到 <select name="select" id="page_select" onChange="changePage(this)">
+                                                    <option value="1"  selected >1</option>
+                                                    <option value="2" >2</option>
+                                                    <option value="3" >3</option>
+                                                    <option value="4" >4</option>
+                                                    <option value="5" >5</option>
+                                                    <option value="6" >6</option>
+                                                    <option value="7" >7</option>
+                                                    <option value="8" >8</option>
+                                                    <option value="9" >9</option>
+                                                    <option value="10" >10</option>
+                                                    <option value="11" >11</option>
+                                                    <option value="12" >12</option>
+                                                    <option value="13" >13</option>
+                                                    <option value="14" >14</option>
+                                                    <option value="15" >15</option>
+                                                    <option value="16" >16</option>
+                                                    <option value="17" >17</option>
+                                                    <option value="18" >18</option>
+                                                    <option value="19" >19</option>
+                                                    <option value="20" >20</option>
+                                                    <option value="21" >21</option>
+                                                    <option value="22" >22</option>
+                                                    <option value="23" >23</option>
+                                                    <option value="24" >24</option>
+                                                    <option value="25" >25</option>
+                                                    <option value="26" >26</option>
+                                                    <option value="27" >27</option>
+                                                    <option value="28" >28</option>
+                                                    <option value="29" >29</option>
+                                                    <option value="30" >30</option>
+                                                    <option value="31" >31</option>
+                                                    <option value="32" >32</option>
+                                                    <option value="33" >33</option>
+                                                    <option value="34" >34</option>
+                                                    <option value="35" >35</option>
+                                                    <option value="36" >36</option>
+                                                    <option value="37" >37</option>
+                                                    <option value="38" >38</option>
+                                                    <option value="39" >39</option>
+                                                    <option value="40" >40</option>
+                                                    <option value="41" >41</option>
+                                                    <option value="42" >42</option>
+                                                    <option value="43" >43</option>
+                                                    <option value="44" >44</option>
+                                                    <option value="45" >45</option>
+                                                    <option value="46" >46</option>
+                                                    <option value="47" >47</option>
+                                                    <option value="48" >48</option>
+                                                    <option value="49" >49</option>
+                                                    <option value="50" >50</option>
+                                                    <option value="51" >51</option>
+                                                    <option value="52" >52</option>
+                                                    <option value="53" >53</option>
+                                                    <option value="54" >54</option>
+                                                    <option value="55" >55</option>
+                                                    <option value="56" >56</option>
+                                                    <option value="57" >57</option>
+                                                    <option value="58" >58</option>
+                                                    <option value="59" >59</option>
+                                                    <option value="60" >60</option>
+                                                    <option value="61" >61</option>
+                                                    <option value="62" >62</option>
+                                                    <option value="63" >63</option>
+                                                    <option value="64" >64</option>
+                                                    <option value="65" >65</option>
+                                                    <option value="66" >66</option>
+                                                    <option value="67" >67</option>
+                                                    <option value="68" >68</option>
+                                                    <option value="69" >69</option>
+                                                    <option value="70" >70</option>
+                                                    <option value="71" >71</option>
+                                                    <option value="72" >72</option>
+                                                    <option value="73" >73</option>
+                                                    <option value="74" >74</option>
+                                                    <option value="75" >75</option>
+                                                    <option value="76" >76</option>
+                                                    <option value="77" >77</option>
+                                                    <option value="78" >78</option>
+                                                    <option value="79" >79</option>
+                                                    <option value="80" >80</option>
+                                                    <option value="81" >81</option>
+                                                    <option value="82" >82</option>
+                                                    <option value="83" >83</option>
+                                                    <option value="84" >84</option>
+                                                    <option value="85" >85</option>
+                                                    <option value="86" >86</option>
+                                                    <option value="87" >87</option>
+                                                    <option value="88" >88</option>
+                                                    <option value="89" >89</option>
+                                                    <option value="90" >90</option>
+                                                    <option value="91" >91</option>
+                                                    <option value="92" >92</option>
+                                                    <option value="93" >93</option>
+                                                    <option value="94" >94</option>
+                                                    <option value="95" >95</option>
+                                                    <option value="96" >96</option>
+                                                    <option value="97" >97</option>
+                                                    <option value="98" >98</option>
+                                                    <option value="99" >99</option>
+                                                    <option value="100" >100</option>
+                                                    <option value="101" >101</option>
+                                                    <option value="102" >102</option>
+                                                    <option value="103" >103</option>
+                                                    <option value="104" >104</option>
+                                                    <option value="105" >105</option>
+                                                    <option value="106" >106</option>
+                                                    <option value="107" >107</option>
+                                                    <option value="108" >108</option>
+                                                    <option value="109" >109</option>
+                        						</select> 頁					</div>
+				</div>
+			</div>
+        			<!--頁數 止-->
+			<!--查詢時間 始-->
+			<div class="cntlisearch11">
+            powered by 博客來 | 查詢時間： 0.21 秒            </div>
+            <!--查詢時間 止-->
+						<!-- Also Key Product start -->	
+	        <div class="mod search-mod-01 clearfix">
+				<h3>查詢關鍵字: <span>python</span>, 推薦您可能感興趣的熱門商品</h3>
+            	<ul class="clearfix">
+                	                	 <li> 
+                    	<div>                 
+                        	<a target="_blank" href="//search.books.com.tw/redirect/move/key/python/area/recommender_product_image/item/0010781465/page/1/reprodidx/7/cat/001" rel="recommender_product_image"><img data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/078/14/0010781465.jpg&w=135&h=135&v=5a9fbf6b" class="cover" src="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/078/14/0010781465.jpg&w=135&h=135&v=5a9fbf6b" alt="Python網頁程式交易APP實作：Web + MySQL + Django" width="135" height="135"></a>
+	                       	<h4><a target="_blank" href="//search.books.com.tw/redirect/move/key/python/area/recommender_product_title/item/0010781465/page/1/reprodidx/7/cat/001" rel="recommender_product_title">Python網頁程式交易APP實作：Web + MySQL + Django</a></h4>
+                        	<span class="price">優惠價: <b>79</b> 折, <b>537</b> 元</span>
+                    	</div>
+                	</li>
+                	                	 <li> 
+                    	<div>                 
+                        	<a target="_blank" href="//search.books.com.tw/redirect/move/key/python/area/recommender_product_image/item/0010734452/page/1/reprodidx/9/cat/001" rel="recommender_product_image"><img data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/073/44/0010734452.jpg&w=135&h=135&v=58186eaf" class="cover" src="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/073/44/0010734452.jpg&w=135&h=135&v=58186eaf" alt="Python 程式設計「超入門」" width="135" height="135"></a>
+	                       	<h4><a target="_blank" href="//search.books.com.tw/redirect/move/key/python/area/recommender_product_title/item/0010734452/page/1/reprodidx/9/cat/001" rel="recommender_product_title">Python 程式設計「超入門」</a></h4>
+                        	<span class="price">優惠價: <b>79</b> 折, <b>332</b> 元</span>
+                    	</div>
+                	</li>
+                	                	 <li> 
+                    	<div>                 
+                        	<a target="_blank" href="//search.books.com.tw/redirect/move/key/python/area/recommender_product_image/item/0010772542/page/1/reprodidx/11/cat/001" rel="recommender_product_image"><img data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/077/25/0010772542.jpg&w=135&h=135&v=5a1e37da" class="cover" src="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/077/25/0010772542.jpg&w=135&h=135&v=5a1e37da" alt="圖解一流菁英高效工作法：3秒構思、3分鐘抓重點，8張表格讓工作又快又好!" width="135" height="135"></a>
+	                       	<h4><a target="_blank" href="//search.books.com.tw/redirect/move/key/python/area/recommender_product_title/item/0010772542/page/1/reprodidx/11/cat/001" rel="recommender_product_title">圖解一流菁英高效工作法：3秒構思、3分鐘抓重點，8張表格讓工作又快又好!</a></h4>
+                        	<span class="price">優惠價: <b>79</b> 折, <b>221</b> 元</span>
+                    	</div>
+                	</li>
+                	                	 <li> 
+                    	<div>                 
+                        	<a target="_blank" href="//search.books.com.tw/redirect/move/key/python/area/recommender_product_image/item/0010778000/page/1/reprodidx/12/cat/001" rel="recommender_product_image"><img data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/077/80/0010778000.jpg&w=135&h=135&v=5a69b1dd" class="cover" src="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/077/80/0010778000.jpg&w=135&h=135&v=5a69b1dd" alt="Python 資料運算與分析實戰：一次搞懂 NumPy•SciPy•Matplotlib•pandas 最強套件" width="135" height="135"></a>
+	                       	<h4><a target="_blank" href="//search.books.com.tw/redirect/move/key/python/area/recommender_product_title/item/0010778000/page/1/reprodidx/12/cat/001" rel="recommender_product_title">Python 資料運算與分析實戰：一次搞懂 NumPy•SciPy•Matplotlib•pandas 最強套件</a></h4>
+                        	<span class="price">優惠價: <b>95</b> 折, <b>561</b> 元</span>
+                    	</div>
+                	</li>
+                	                	 <li> 
+                    	<div>                 
+                        	<a target="_blank" href="//search.books.com.tw/redirect/move/key/python/area/recommender_product_image/item/0010771263/page/1/reprodidx/13/cat/001" rel="recommender_product_image"><img data-original="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/077/12/0010771263.jpg&w=135&h=135&v=5a1e34fb" class="cover" src="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/077/12/0010771263.jpg&w=135&h=135&v=5a1e34fb" alt="演算法圖鑑：26種演算法 + 7種資料結構，人工智慧、數據分析、邏輯思考的原理和應用全圖解" width="135" height="135"></a>
+	                       	<h4><a target="_blank" href="//search.books.com.tw/redirect/move/key/python/area/recommender_product_title/item/0010771263/page/1/reprodidx/13/cat/001" rel="recommender_product_title">演算法圖鑑：26種演算法 + 7種資料結構，人工智慧、數據分析、邏輯思考的原理和應用全圖解</a></h4>
+                        	<span class="price">優惠價: <b>79</b> 折, <b>356</b> 元</span>
+                    	</div>
+                	</li>
+                	            	</ul>    
+        	</div>
+			<!-- Also Key Product end -->
+									<!-- Activity start -->
+			<div class="mod search-mod-04 clearfix">
+                <h3>您可能感興趣的活動</h3>
+                <ul>
+					<a target="_blank" href="//search.books.com.tw/redirect/move/key/python/area/recommender_activity/actname/%E6%87%82%E5%BE%97%E9%81%8B%E7%94%A8%E7%A7%91%E6%8A%80%EF%BC%8C%E8%AE%93%E7%94%9F%E6%B4%BB%E6%9B%B4%E4%BE%BF%E5%88%A9%E3%80%82%E6%99%BA%E6%85%A7%E7%94%9F%E6%B4%BB%E9%9B%BB%E8%85%A6%E5%B1%95%EF%BC%8C%E5%8F%83%E5%B1%95%E6%9B%B859%E6%8A%98%E8%B5%B7%EF%BC%81/acturl
