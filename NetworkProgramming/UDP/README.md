@@ -3,10 +3,11 @@ LibraryManagementSystem
 
 Setup
 ---
-1. Build 2 project: udpServer and udpClient
+1. Build 2 project: udpServer and udpClient 
 2. Put java files which in udpServer folder into udpServer project. MediaList folder is also under udpServer project, too.
 3. Put java files which in udpClient folder into udpClient project.
 4. Main function "gui" is in udpClient project.
+![](https://github.com/guiruli08650129/NUTN-Course/blob/master/NetworkProgramming/UDP/pictures/setup.png)
 
 Description
 ---
@@ -21,10 +22,10 @@ Step
 3. Client與Server連線後會回傳所有影音資料夾中的檔案。
 4. 選擇檔案下載，下載完畢後自動開啟。
 
-:::danger
-注意：
+
+**注意
+---
 1. 影音的檔名加附檔名不可超過16個字。
 2. 一個Client一次只能下載一個檔案。
-:::
-
+**
 
