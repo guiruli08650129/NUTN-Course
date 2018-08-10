@@ -7,5 +7,6 @@ National University of Tainan - Computer Science (2013.9-2017.6)
 - Data Structure
 - Information Security
 - Image Processing
+- Network Programming
 - Object Oriented Programming
-
+- Signal & System
