@@ -1,0 +1,60 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+#include <time.h>
+#include <omp.h>
+#include <assert.h>
+#include <Windows.h>
+
+#define SIZE 800000
+using namespace std;
+
+int search(int start, int end, int* arr, int target)
+{
+	int ans = 0;
+
+	for (int j = start; j < end; j++)
+	{
+		if (target == arr[j])
+		{
+			ans = j;
+		}
+	}
+	return ans;
+}
+
+int main()
+{
+	double start, end;
+	int *arr = new int[SIZE];
+	for (int i = 0; i < SIZE; i++)
+	{
+		//arr[i] = i;
+		arr[i] = (rand()%SIZE)+1;
+	}
+	int target=0 , n = 0, ans = 0;
+	cout << "Input target:";
+	cin >> target;
+	cout << "Input thread number:";
+	cin >> n;
+
+	start = clock();
+	printf("# of proc = %d \n", omp_get_num_procs());
+#pragma omp parallel num_threads(n)
+	{
+		int temp = SIZE / n;
+		ans = search(omp_get_thread_num()*temp, (omp_get_thread_num()+1)*temp, arr, target);
+		if (ans != 0)
+		{
+			printf("\nTarget %d run on thread %d on Core %d is in arr[%d].\n", target, omp_get_thread_num(), GetCurrentProcessorNumber(), ans);
+		}
+		else
+			printf("\nTarget %d run on thread %d on Core %d  is not in arr.\n", target, omp_get_thread_num(), GetCurrentProcessorNumber());
+	}
+	end = clock();
+	cout << "\nTotal time = " << (end - start) / CLOCKS_PER_SEC;
+
+	system("pause");
+	return 0;
+
+}
