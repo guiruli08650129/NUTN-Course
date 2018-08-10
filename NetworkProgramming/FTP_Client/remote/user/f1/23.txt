@@ -1,0 +1,5 @@
+binari
+truth function oper
+decim comput
+extract command
+kautz

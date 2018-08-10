@@ -1,0 +1,3 @@
+subroutin method
+calcul logarithm
+bemer

@@ -1,0 +1,5 @@
+extract
+root
+repeat subtract
+digit comput
+sugai

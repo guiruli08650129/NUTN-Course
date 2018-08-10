@@ -1,0 +1,3 @@
+glossari
+comput engin
+program terminolog
