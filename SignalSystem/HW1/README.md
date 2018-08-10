@@ -11,7 +11,7 @@ Description
 
 Parameter
 ---
-- Equation:
+- Equation:![](https://github.com/guiruli08650129/NUTN-Course/blob/master/SignalSystem/HW1/architecture.png)
 - m: x延遲的個數
 - n: y延遲的個數
 - num: 時間
